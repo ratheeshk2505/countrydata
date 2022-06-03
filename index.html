@@ -98,7 +98,7 @@
         //             }
         //         }
         //     }
-        fetch("https://restcountries.eu/rest/v2/all").then(country=>{if(country.ok){return country.json()}else{throw new Error("Fetching failed from url")}}).then(data=>listCountry(data))
+        fetch("https://restcountries.com/v3.1/all").then(country=>{if(country.ok){return country.json()}else{throw new Error("Fetching failed from url")}}).then(data=>listCountry(data))
     }
     function getOneCountryDetails(){
         let country_name = drop.value;
